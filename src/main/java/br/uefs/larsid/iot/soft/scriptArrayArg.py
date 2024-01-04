@@ -17,7 +17,7 @@ def main():
     # Cria um array NumPy a partir dos valores fornecidos
     numpy_array = np.array(valores_lista)
 
-    print('Array NumPy criado:')
+    # print('Array NumPy criado:')
     print(numpy_array)
 
 if __name__ == "__main__":
