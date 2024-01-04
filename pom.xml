@@ -9,7 +9,7 @@
     <artifactId>test-jython</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>test-jython</name>
+    <name>test-python-within-java</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
@@ -24,6 +24,12 @@
             <groupId>org.python</groupId>
             <artifactId>jython-slim</artifactId>
             <version>2.7.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-exec</artifactId>
+            <version>1.3</version>
         </dependency>
     </dependencies>
 
