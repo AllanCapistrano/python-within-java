@@ -1,7 +1,7 @@
 from argparse import ArgumentParser
 
 def main():
-    parser = argparse.ArgumentParser(description='Exemplo de passagem de valores para um script Python.')
+    parser = ArgumentParser(description='Exemplo de passagem de valores para um script Python.')
     
     # Adicione argumentos aqui
     parser.add_argument('valor1', type=int, help='Primeiro valor')
