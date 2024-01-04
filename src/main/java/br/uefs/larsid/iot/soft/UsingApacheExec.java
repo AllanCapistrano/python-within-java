@@ -23,10 +23,12 @@ public class UsingApacheExec {
     nodesCredibility.add((float) 0.74329332);
     nodesCredibility.add((float) 0.01303828);
 
-    System.out.println(nodesCredibility.toString());
+    String nodesCredibilityString = nodesCredibility.toString();
 
 
-    String line = "python src/main/java/br/uefs/larsid/iot/soft/scriptParams.py 5 2";
+    // String line = "python src/main/java/br/uefs/larsid/iot/soft/scriptParams.py 5 2";
+    String line = String.format("python src/main/java/br/uefs/larsid/iot/soft/scriptArrayArg.py '%s'", nodesCredibilityString);
+
     CommandLine cmdLine = CommandLine.parse(line);
 
     ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
