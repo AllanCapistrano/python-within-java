@@ -1,7 +1,7 @@
 <h1 align="center">Python within Java</h1>
 
 ## :book: Description ##
-This project allows the execution of Python code within the Java project. There are three different ways to do that:
+This project shows how to execute Python code within a Java project. There are three different ways to do that:
 - Using [Apache Commons Exec](https://commons.apache.org/proper/commons-exec/index.html)
 - Using [Jython](https://www.jython.org/)
 - Using [Process Build](https://docs.oracle.com/javase/8/docs/api/java/lang/ProcessBuilder.html)
