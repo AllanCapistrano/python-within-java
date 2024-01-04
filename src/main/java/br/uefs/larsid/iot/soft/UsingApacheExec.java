@@ -3,7 +3,9 @@ package br.uefs.larsid.iot.soft;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.apache.commons.exec.CommandLine;
 import org.apache.commons.exec.DefaultExecutor;
@@ -42,6 +44,18 @@ public class UsingApacheExec {
 
       if (exitCode == 0) {
         System.out.println(outputStream.toString());
+
+        String output = outputStream.toString();
+        /* Sanitizando a lista */
+        output = output.substring(1, output.length() - 2);
+        
+        System.out.println(output);
+
+        /* Convertendo a saída String em uma lista de Floats*/
+        List<String> stringList = new ArrayList<String>(Arrays.asList(output.split(",")));
+        List<Float> floats = stringList.stream().map(Float::valueOf).collect(Collectors.toList());
+
+        System.out.println(floats.toString());
       }
     } catch (IOException e) {
       e.printStackTrace();
