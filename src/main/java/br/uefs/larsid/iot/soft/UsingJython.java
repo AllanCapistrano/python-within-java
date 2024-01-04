@@ -8,7 +8,7 @@ import org.python.util.PythonInterpreter;
  * Hello world!
  *
  */
-public class App {
+public class UsingJython {
 
   public static void main(String[] args) {
     try (PythonInterpreter pyInterp = new PythonInterpreter()) {
