@@ -9,7 +9,7 @@
     <artifactId>test-jython</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>test-python-within-java</name>
+    <name>python-within-java</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
