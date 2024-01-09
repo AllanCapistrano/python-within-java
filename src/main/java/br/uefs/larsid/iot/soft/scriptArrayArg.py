@@ -18,7 +18,8 @@ def main():
     numpy_array = np.array(valores_lista)
 
     # print('Array NumPy criado:')
-    print(numpy_array)
+    print(list(numpy_array)) # Para o Process Builder
+    # print(numpy_array) # Para o Apache Common Exec
 
 if __name__ == "__main__":
     main()
