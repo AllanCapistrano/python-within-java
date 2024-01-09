@@ -4,9 +4,11 @@
 This project shows how to execute Python code within a Java project. There are three different ways to do that:
 - Using [Apache Commons Exec](https://commons.apache.org/proper/commons-exec/index.html)
 - Using [Jython](https://www.jython.org/)
-- Using [Process Build](https://docs.oracle.com/javase/8/docs/api/java/lang/ProcessBuilder.html)
+- Using [Process Builder](https://docs.oracle.com/javase/8/docs/api/java/lang/ProcessBuilder.html)
 
 Each has advantages and disadvantages, but Jython does not support Python 3, while the others use Python installed on your local machine.
+
+Apache Commons Exec doesn't work well handling [Pythons lists](https://docs.python.org/3/tutorial/datastructures.html), while Process Builder doesn't work well with [Numpy Array](https://numpy.org/doc/stable/reference/generated/numpy.array.html).
 
 ------------
 
