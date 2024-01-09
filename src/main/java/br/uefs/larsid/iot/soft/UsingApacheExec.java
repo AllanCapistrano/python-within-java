@@ -16,14 +16,29 @@ public class UsingApacheExec {
   public static void main(String[] args) {
     List<Float> nodesCredibility = new ArrayList<>();
 
-    nodesCredibility.add((float) 0.51720076);
-    nodesCredibility.add((float) 0.8750231);
-    nodesCredibility.add((float) 0.59633187);
-    nodesCredibility.add((float) 0.98066132);
-    nodesCredibility.add((float) 0.70062445);
-    nodesCredibility.add((float) 0.54810414);
-    nodesCredibility.add((float) 0.74329332);
-    nodesCredibility.add((float) 0.01303828);
+    nodesCredibility.add((float) 0.28183499);
+    nodesCredibility.add((float) 0.38471779);
+    nodesCredibility.add((float) 0.30450052);
+    nodesCredibility.add((float) 0.35634024);
+    nodesCredibility.add((float) 0.88328644);
+    nodesCredibility.add((float) 0.96039498);
+    nodesCredibility.add((float) 0.39787825);
+    nodesCredibility.add((float) 0.87692179);
+    nodesCredibility.add((float) 0.80777235);
+    nodesCredibility.add((float) 0.11998001);
+    nodesCredibility.add((float) 0.84409202);
+    nodesCredibility.add((float) 0.94645712);
+    nodesCredibility.add((float) 0.68551824);
+    nodesCredibility.add((float) 0.31924441);
+    nodesCredibility.add((float) 0.2864198);
+    nodesCredibility.add((float) 0.18014661);
+    nodesCredibility.add((float) 0.55712999);
+    nodesCredibility.add((float) 0.84816832);
+    nodesCredibility.add((float) 0.22157936);
+    nodesCredibility.add((float) 0.64935416);
+    nodesCredibility.add((float) 0.46825506);
+    nodesCredibility.add((float) 0.66246562);
+    nodesCredibility.add((float) 0.47541294);
 
     String nodesCredibilityString = nodesCredibility.toString();
 
