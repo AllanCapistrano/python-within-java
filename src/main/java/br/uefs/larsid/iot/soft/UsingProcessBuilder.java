@@ -40,9 +40,12 @@ public class UsingProcessBuilder {
 
     String nodesCredibilityString = nodesCredibility.toString();
 
-
     // ProcessBuilder processBuilder = new ProcessBuilder("python", "src/main/java/br/uefs/larsid/iot/soft/script.py");
-    ProcessBuilder processBuilder = new ProcessBuilder("python", "src/main/java/br/uefs/larsid/iot/soft/scriptArrayArg.py", nodesCredibilityString);
+    ProcessBuilder processBuilder = new ProcessBuilder(
+      "python",
+      "src/main/java/br/uefs/larsid/iot/soft/scriptArrayArg.py",
+      nodesCredibilityString
+    );
     processBuilder.redirectErrorStream(true);
 
     try {
@@ -54,29 +57,37 @@ public class UsingProcessBuilder {
       System.out.println(output);
 
       /* Convertendo a saída String em uma lista de Floats*/
-      List<String> stringList = new ArrayList<String>(Arrays.asList(output.split(",")));
-      List<Float> floats = stringList.stream().map(Float::valueOf).collect(Collectors.toList());
+      List<String> stringList = new ArrayList<String>(
+        Arrays.asList(output.split(","))
+      );
+      List<Float> floats = stringList
+        .stream()
+        .map(Float::valueOf)
+        .collect(Collectors.toList());
 
       System.out.println(floats.toString());
-
     } catch (IOException e) {
       e.printStackTrace();
     }
   }
 
   public static String readInputStream(InputStream inputStream) {
-        StringBuilder content = new StringBuilder();
+    StringBuilder content = new StringBuilder();
 
-        try (BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream))) {
-            String line;
+    try (
+      BufferedReader reader = new BufferedReader(
+        new InputStreamReader(inputStream)
+      )
+    ) {
+      String line;
 
-            while ((line = reader.readLine()) != null) {
-                content.append(line).append("\n");
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        return content.toString();
+      while ((line = reader.readLine()) != null) {
+        content.append(line).append("\n");
+      }
+    } catch (IOException e) {
+      e.printStackTrace();
     }
+
+    return content.toString();
+  }
 }
